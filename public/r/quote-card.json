@@ -1,0 +1,14 @@
+{
+  "name": "quote-card",
+  "type": "registry:block",
+  "description": "A simple quote card using ShadCN UI Card",
+  "registryDependencies": ["card"],
+  "files": [
+    {
+      "path": "components/quote-card.tsx",
+      "target": "components/quote-card.tsx",
+      "type": "registry:component",
+      "content": "import { Card, CardContent } from \"@/components/ui/card\";\n\nexport function QuoteCard({\n  quote,\n  author,\n}: {\n  quote: string;\n  author: string;\n}) {\n  return (\n    <Card>\n      <CardContent className=\"p-6\">\n        <blockquote className=\"text-xl italic text-muted-foreground\">\n          \"{quote}\"\n        </blockquote>\n        <p className=\"mt-4 text-right font-semibold\">— {author}</p>\n      </CardContent>\n    </Card>\n  );\n}\n"
+    }
+  ]
+}
