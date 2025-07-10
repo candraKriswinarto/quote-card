@@ -11,7 +11,7 @@ export function QuoteCard({
     <Card>
       <CardContent className="p-6">
         <blockquote className="text-xl italic text-muted-foreground">
-          "{quote}"
+          &quot;{quote}&quot;
         </blockquote>
         <p className="mt-4 text-right font-semibold">— {author}</p>
       </CardContent>
